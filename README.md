@@ -54,7 +54,17 @@ This script is specifically optimized for **Google Colab**. It includes an initi
 The execution generates the following artifacts:
 *   **Data Files:** `Thesis_Data_File.csv`, `Stationarity_Results.csv`, `Correlation_Results.csv`.
 *   **Model Metrics:** `Baseline_Model_Performance.csv`, `H2O_AutoML_Leaderboard.csv`, `Diebold_Mariano_Test_Results.csv`.
-*   **Visualizations:** `SHAP_Summary_Plot.png`, `Feature_Importance.png`, `Scatter_Plot_Actual_vs_Predicted.png`.
+*   **Visualizations:** `Scatter_Plot_Actual_vs_Predicted.png`, `Feature_Importance.png`, `SHAP_Summary_Plot.png`.
+
+## Key Visualizations
+### Prediction Accuracy (Actual vs Predicted)
+![Scatter Plot](results/Scatter_Plot_Actual_vs_Predicted.png)
+
+### Feature Importance
+![Feature Importance](results/Feature_Importance.png)
+
+### Model Explainability (SHAP)
+![SHAP Summary](results/SHAP_Summary_Plot.png)
 
 ## License
 Copyright (C) 2025 Mohammad Rasoul Mostafavi Marian
